@@ -30,13 +30,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
 
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#">Proyectos
-                <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nueva propuesta</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Nueva propuesta
+              <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Notificaciones</a>
@@ -51,27 +51,25 @@
 
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-5">Lista de propuesta para proyectos de final de grado.</h1>
-
-      <div class="accordion" id="accordionExample">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Titol Projecte
-            </button>
-          </h5>
-        </div>
-
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-          Descripcio projecte
-        </div>
-      </div>
-    </div>
-  </div>
-        
+        <h1 class="display-5">Formulario de propuesta de proyecto de final de grado.</h1>
       </header>
+
+      <form>
+        <div class="form-group">
+          <label for="titulo">Titulo del proyecto.</label>
+          <input type="text" class="form-control" id="tituloId">
+        </div>
+
+        <div class="form-group">
+          <label for="titulo">Descripción.</label>
+          <textarea class="form-control" id="descrpcionId" rows="5"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="save" class="btn btn-secundary">Guardar</button>
+        </div>
+      </form>
 
     </div>
     <!-- /.container -->
